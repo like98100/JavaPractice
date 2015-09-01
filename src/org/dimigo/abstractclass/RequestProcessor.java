@@ -1,6 +1,3 @@
-/**
- * 
- */
 package org.dimigo.abstractclass;
 
 import java.io.IOException;
@@ -23,7 +20,7 @@ import java.util.Properties;
  */
 public class RequestProcessor {
 	
-	public static void main(String[] args) throws IOException	{
+	public static void main(String[] args) throws IOException, ClassNotFoundException, InstantiationException, IllegalAccessException	{
 		RequestProcessor p = new RequestProcessor();
 		InputStream is = p.getClass().getResourceAsStream("map.properties");
 		
@@ -34,7 +31,18 @@ public class RequestProcessor {
 			Properties prop = new Properties();
 			prop.load(is);
 			
-			String actionName = prop.getProperty("insert");
+			String actionName = prop.getProperty("update");
+			
+			if(actionName == null)	{
+				System.out.println("등록된 action 정보가 없습니다.");
+				return;
+			}
+			
+			//Action Class 객체 생성
+			Class cls = Class.forName(actionName);
+			Action action = (Action)cls.newInstance();
+			
+			action.execute();
 		}
 	}
 

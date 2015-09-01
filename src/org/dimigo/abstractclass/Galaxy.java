@@ -5,11 +5,11 @@ package org.dimigo.abstractclass;
 
 /**
  *  <pre>
- * org.dimigo.inheritance
+ * org.dimigo.abstractclass
  * |_Galaxy
  *
  * 1. 개요 : 
- * 2. 작성일 : 2015. 8. 27. 
+ * 2. 작성일 : 2015. 9. 1. 
  * </pre>
  *
  * @author : 윤병창
