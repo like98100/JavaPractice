@@ -30,5 +30,21 @@ public class Engine {
 	public String toString() {
 		return "Engine [type=" + type + "]";
 	}
+
+	/**
+	 * 
+	 */
+	public void startEngine() {
+		
+		
+	}
+
+	/**
+	 * 
+	 */
+	public void stopEngine() {
+		
+		
+	}
 	
 }
