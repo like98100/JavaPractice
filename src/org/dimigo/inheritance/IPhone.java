@@ -25,7 +25,7 @@ public class IPhone extends SmartPhone{
 	}
 	
 	public void pay()	{
-		System.out.printf("Samsung");
+		System.out.printf("Apple");
 		super.pay();
 	}
 	
