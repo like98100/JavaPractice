@@ -34,7 +34,7 @@ public class MelonGenreChart {
 		map.put("Ganre", (List<Music>)balad);
 		balad.add(new Music("내 첫사랑", "베리굿"));
 		balad.add(new Music("또 다시 사랑", "임창정"));
-		balad.add(new Music("부산에 가면", "박진연"));
+		balad.add(new Music("부산에 가면", "박진영"));
 		
 		List<Music> dance = new ArrayList<>();
 		map.put("Dance", (List<Music>)dance);
